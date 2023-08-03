@@ -12,6 +12,7 @@ setup(
     author="tadahaya",
     packages=find_packages(),
     install_requires=install_requirements,
+    include_package_data=True, # necessary for including data indicated in MANIFEST.in
     entry_points={
         "console_scripts": [
             "mycommand=mymodule.core:main",
